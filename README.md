@@ -14,9 +14,9 @@ npm install x11 x11-prop
 
 ```
 var x11 = require('x11');
-var x11-prop = require('x11-prop');
-var decoder = x11-prop.decoder;
-var encoder = x11-prop.encoder;
+var x11prop = require('x11-prop');
+var decoder = x11prop.decoder;
+var encoder = x11prop.encoder;
 
 x11.createClient(function(err, display) {
     if (err) {
