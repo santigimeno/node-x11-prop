@@ -1,0 +1,32 @@
+{
+    "name": "x11-prop",
+    "version": "0.0.0",
+    "description": "X11 Properties Coder / Encoder",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/santigimeno/node-x11-prop.git"
+    },
+    "keywords": [
+        "x11",
+        "coder",
+        "encoder",
+        "codec"
+    ],
+    "author": "Santiago Gimeno",
+    "license": "ISC",
+    "dependencies": {
+        "iconv": "~2.0.7"
+    },
+    "author": {
+        "name" : "Santiago Gimeno",
+        "email": "santiago.gimeno@gmail.com"
+    },"license": {
+        "type": "ISC",
+        "url": "https://github.com/santigimeno/node-x11-prop/blob/master/LICENSE"
+    },
+    "readmeFilename": "README.md"
+}
