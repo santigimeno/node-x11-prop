@@ -78,3 +78,7 @@ x11-prop.decode(type, data)
 type : string with one of the supported types
 data : data field of the property object returned by *X.GetProperty*
 ```
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/santigimeno/node-x11-prop/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
