@@ -19,8 +19,8 @@
     "author": "Santiago Gimeno",
     "license": "ISC",
     "dependencies": {
-        "async": "~0.2.9",
-        "iconv": "~2.0.7"
+        "async": "~0.8.0",
+        "iconv": "^2.0.7"
     },
     "peerDependencies": {
         "x11": ">=0.7.1"
