@@ -1,11 +1,8 @@
-node-x11-prop
-=============
+# node-x11-prop
 
 Utility to deal with X11 properties
 
-
-Example
-=======
+## Example
 
 Install x11 and x11-prop module
 ```
@@ -85,15 +82,13 @@ x11.createClient(function(err, display) {
 ```
 
 
-Supported Types
-===============
+## Supported Types
 
 STRING, UTF8_STRING, ATOM, INTEGER, CARDINAL, WINDOW, WM_STATE
 
-API
-===
+## API
 
-** Set property **
+### Set property
 
 ```
 x11prop.set_property(X, wid, prop, type, format, data, null_terminated, cb)
@@ -109,7 +104,7 @@ data : 1 - Array of strings for string properties: STRING, UTF8_STRING
 null_terminated : (only for string properties) if true, the strings will be null terminated.
                   Otherwise, they will be null separated
 ```
-** Get property **
+### Get property
 
 ```
 x11prop.get_property(X, wid, prop, type, cb)
@@ -121,7 +116,7 @@ type : type of the property (string or atom)
 cb : function(err, result), where result is the decoded property value
 ```
 
-**Encode**
+### Encode
 
 
 ```
@@ -135,7 +130,7 @@ null_terminated : (only for string properties) if true, the strings will be null
                   Otherwise, they will be null separated
 ```
 
-**Decode**
+### Decode
 
 ```
 x11prop.decode(type, data)
@@ -143,7 +138,3 @@ x11prop.decode(type, data)
 type : string with one of the supported types
 data : data field of the property object returned by *X.GetProperty*
 ```
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/santigimeno/node-x11-prop/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
