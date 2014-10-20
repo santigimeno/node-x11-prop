@@ -1,6 +1,6 @@
 {
     "name": "x11-prop",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "X11 Properties Coder / Encoder",
     "main": "index.js",
     "scripts": {
