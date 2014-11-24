@@ -84,7 +84,7 @@ x11.createClient(function(err, display) {
 
 ## Supported Types
 
-STRING, UTF8_STRING, ATOM, INTEGER, CARDINAL, WINDOW, WM_STATE
+STRING, UTF8_STRING, ATOM, INTEGER, CARDINAL, WINDOW, WM_STATE, _XSETTINGS_SETTINGS
 
 ## API
 
@@ -101,6 +101,9 @@ format : 8, 16, 32
 data : 1 - Array of strings for string properties: STRING, UTF8_STRING
        2 - Array of integers for ATOM, INTEGER, CARDINAL, WINDOW
        3 - For WM_STATE: { state : integer [, icon : integer ]}
+       4 - For _XSETTINGS_SETTINGS: { serial: integer, setting1 : { type:
+                                      integer, serial: integer, value: {}}, ... }
+           See: https://github.com/sidorares/x11-xsettings
 null_terminated : (only for string properties) if true, the strings will be null terminated.
                   Otherwise, they will be null separated
 ```
@@ -126,6 +129,9 @@ type : string with one of the supported types
 data : 1 - Array of strings for string properties: STRING, UTF8_STRING
        2 - Array of integers for ATOM, INTEGER, CARDINAL, WINDOW
        3 - For WM_STATE: { state : integer [, icon : integer ]}
+       4 - For _XSETTINGS_SETTINGS: { serial: integer, setting1 : { type:
+                                      integer, serial: integer, value: {}}, ... }
+           See: https://github.com/sidorares/x11-xsettings
 null_terminated : (only for string properties) if true, the strings will be null terminated.
                   Otherwise, they will be null separated
 ```
