@@ -91,7 +91,7 @@ STRING, UTF8_STRING, ATOM, INTEGER, CARDINAL, WINDOW, WM_STATE, _XSETTINGS_SETTI
 ### Set property
 
 ```
-x11prop.set_property(X, wid, prop, type, format, data, null_terminated, cb)
+x11prop.set_property(X, wid, prop, type, format, data[, null_terminated], cb)
 
 X : X client from x11 library
 wid : window id
@@ -104,8 +104,8 @@ data : 1 - Array of strings for string properties: STRING, UTF8_STRING
        4 - For _XSETTINGS_SETTINGS: { serial: integer, setting1 : { type:
                                       integer, serial: integer, value: {}}, ... }
            See: https://github.com/sidorares/x11-xsettings
-null_terminated : (only for string properties) if true, the strings will be null terminated.
-                  Otherwise, they will be null separated
+null_terminated : (optional AND only for string properties) if true, the strings will be null terminated.
+                  Otherwise, they will be null separated.
 ```
 ### Get property
 
@@ -132,7 +132,7 @@ data : 1 - Array of strings for string properties: STRING, UTF8_STRING
        4 - For _XSETTINGS_SETTINGS: { serial: integer, setting1 : { type:
                                       integer, serial: integer, value: {}}, ... }
            See: https://github.com/sidorares/x11-xsettings
-null_terminated : (only for string properties) if true, the strings will be null terminated.
+null_terminated : (optional AND only for string properties) if true, the strings will be null terminated.
                   Otherwise, they will be null separated
 ```
 
