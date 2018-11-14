@@ -16,8 +16,14 @@
         "encoder",
         "codec"
     ],
-    "author": "Santiago Gimeno",
-    "license": "ISC",
+    "author": {
+        "name": "Santiago Gimeno",
+        "email": "santiago.gimeno@gmail.com"
+    },
+    "license": {
+        "type": "ISC",
+        "url": "https://github.com/santigimeno/node-x11-prop/blob/master/LICENSE"
+    },
     "dependencies": {
         "async": "~0.8.0",
         "iconv": "^2.0.7",
@@ -25,13 +31,6 @@
     },
     "peerDependencies": {
         "x11": ">=0.7.1"
-    },
-    "author": {
-        "name" : "Santiago Gimeno",
-        "email": "santiago.gimeno@gmail.com"
-    },"license": {
-        "type": "ISC",
-        "url": "https://github.com/santigimeno/node-x11-prop/blob/master/LICENSE"
     },
     "readmeFilename": "README.md"
 }
